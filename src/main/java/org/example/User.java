@@ -22,5 +22,12 @@ public class User {
     }
     public void userDetails(){
         System.out.println("Numer konta:"+accountNumber+ "imie:"+name+ "Nazwisko:"+surname+ "Nickname"+nickname+ "pesel"+pesel+ "Saldo"+balance);
-}
+    }
+    public double deposit(double money){
+        return balance=balance+money;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
 }

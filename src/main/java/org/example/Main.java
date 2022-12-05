@@ -26,7 +26,10 @@ public class Main {
                 user1.userDetails();
                 break;
             case 2:
-                System.out.println("Wpłata pieniędzy");
+                System.out.println("Ile chcesz wpłacić pieniędzy");
+                double moneyToDeposit= scanner.nextDouble();
+                user1.deposit(moneyToDeposit);
+                System.out.println("Saldo twojego konta: "+user1.getBalance());
                 break;
             case 3:
                 System.out.println("Wypłata pieniędzy");
