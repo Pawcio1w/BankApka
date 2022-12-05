@@ -17,6 +17,23 @@ public class Main {
         User user1= new User(name, surname, pesel);
 
         System.out.println("Menu \n1.Informacja o koncie \n2.Wpłata pieniędzy \n3.Wypłata pieniędzy \n4.Wyjście ");
+        System.out.println("Co byś chciał zrobić?");
+        int select= scanner.nextInt();
 
+        switch(select){
+            case 1:
+                System.out.println("Informacja o koncie");
+                break;
+            case 2:
+                System.out.println("Wpłata pieniędzy");
+                break;
+            case 3:
+                System.out.println("Wypłata pieniędzy");
+                break;
+            case 4:
+                System.out.println("Wyjście");
+                break;
+        }
     }
+
 }
