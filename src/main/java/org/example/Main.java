@@ -13,6 +13,9 @@ public class Main {
         System.out.println("Wprowadź pesel");
         int pesel=scanner.nextInt();
 
+
+        User user1= new User(name, surname, pesel);
+
         System.out.println("Menu \n1.Informacja o koncie \n2.Wpłata pieniędzy \n3.Wypłata pieniędzy \n4.Wyjście ");
 
     }
