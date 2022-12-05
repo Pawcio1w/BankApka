@@ -15,33 +15,36 @@ public class Main {
 
 
         User user1= new User(name, surname, pesel);
-
+        int select;
+    do {
         System.out.println("Menu \n1.Informacja o koncie \n2.Wpłata pieniędzy \n3.Wypłata pieniędzy \n4.Wyjście ");
         System.out.println("Co byś chciał zrobić?");
-        int select= scanner.nextInt();
+        select = scanner.nextInt();
 
-        switch(select){
+        switch (select) {
             case 1:
                 System.out.println("Informacja o koncie");
                 user1.userDetails();
                 break;
             case 2:
                 System.out.println("Ile chcesz wpłacić pieniędzy");
-                double moneyToDeposit= scanner.nextDouble();
+                double moneyToDeposit = scanner.nextDouble();
                 user1.deposit(moneyToDeposit);
-                System.out.println("Saldo twojego konta: "+user1.getBalance());
+                System.out.println("Saldo twojego konta: " + user1.getBalance());
                 break;
             case 3:
                 System.out.println("Wypłata pieniędzy");
-                double moneyWithdraw= scanner.nextDouble();
+                double moneyWithdraw = scanner.nextDouble();
                 user1.withdraw(moneyWithdraw);
-                System.out.println("Saldo twojego konta wynosi: "+user1.getBalance());
-                
+                System.out.println("Saldo twojego konta wynosi: " + user1.getBalance());
+
                 break;
             case 4:
-                System.out.println("Wyjście");
+                System.out.println("Do zobaczenia");
                 break;
         }
+    }
+    while(select!=4);
     }
 
 }
