@@ -33,6 +33,10 @@ public class Main {
                 break;
             case 3:
                 System.out.println("Wypłata pieniędzy");
+                double moneyWithdraw= scanner.nextDouble();
+                user1.withdraw(moneyWithdraw);
+                System.out.println("Saldo twojego konta wynosi: "+user1.getBalance());
+                
                 break;
             case 4:
                 System.out.println("Wyjście");
