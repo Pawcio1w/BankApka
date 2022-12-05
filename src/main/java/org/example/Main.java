@@ -23,6 +23,7 @@ public class Main {
         switch(select){
             case 1:
                 System.out.println("Informacja o koncie");
+                user1.userDetails();
                 break;
             case 2:
                 System.out.println("Wpłata pieniędzy");

@@ -20,5 +20,7 @@ public class User {
     public String nicknameGenerator(String name, String surname){
         return (name.substring(0,3)+surname.substring(0,3));
     }
-
+    public void userDetails(){
+        System.out.println("Numer konta:"+accountNumber+ "imie:"+name+ "Nazwisko:"+surname+ "Nickname"+nickname+ "pesel"+pesel+ "Saldo"+balance);
+}
 }
